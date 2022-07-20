@@ -1,0 +1,23 @@
+# Searching-Algorithms-Codes
+#include<iostream>		//linear or sequential search
+using namespace std;
+int main()
+{
+	int arr[5]={2,3,4,6,7};
+	int num, found=0;
+	cout<<"Enter Number you want to search it is present or not: "<<"\n";
+	cin>>num;
+	for(int i=0;i<=4;i++)	//for loop for changing index of array for searching 
+	{						//is it equal to given number or not. 
+		if(arr[i]==num)
+		{
+			cout<<"Number is present in this array at index: "<<i<<"\nAnd position: "<<i+1<<"\n";
+			found=1;
+			
+		}
+	}
+	if(found==0)
+	{
+		cout<<"This given number is not present in this array \n";
+	}
+}
